@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="screenshots/icon.png">
+  <link rel="stylesheet" href="storyStyling.css">
+        <title>InspireMe: Get Featured</title>
+        <style>
+        
+            body {
+                background: linear-gradient(rgba(0,0,50,0.3),rgba(0,0,50,0.6)),url(screenshots/wallpaper.jpg);
+                background-size: cover;
+                background-position: center;
+                
+                
+            }
+           
+            .featured-box {
+                text-align: center;
+            }
+            
+           
+            .featured-title {
+               color: #fff;
+                text-transform: uppercase;
+                transition: all 4s ease-in-out;
+                margin-top: 50px;
+            }
+            
+            .featured-title h2 {
+                font-size: 36px;
+                line-height: 10px;
+            }
+            
+            form {
+                margin-top: 50px;
+                  transition: all 4s ease-in-out;
+            }
+            
+            .form-control {
+                width: 600px;
+                background: transparent;
+                border: none;
+                outline: none;
+                border-bottom: 2px solid lightgray;
+                color: snow;
+                font-size: 18px;
+                margin-bottom: 16px;
+            }
+            
+            input {
+                height: 45px;
+                transition: 0.5s;
+            }
+            
+            form .submit {
+                background: #ff5722;
+                border-color: transparent;
+                color: #fff;
+                font-size: 20px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                height: 50px;
+                margin-top: 20px;
+                border-radius: 20px;
+                width: 300px;
+            }
+            
+            form .submit:hover {
+                background: #f44336;
+                cursor: pointer;
+            }
+            
+            textarea {
+                transition:0.5s;
+                resize: none;
+            }
+            ::placeholder {
+                color: #F0F0F0;
+            }
+            
+            
+            .form-control:focus {
+                border-bottom: 2px solid #F7A46E;
+            }
+        </style>
+        
+        
+        
+    </head>
+<body>
+<div class="topnav">
+    <h1 class="blinking">InspireMe</h1>
+<a href="project.html" class="active">Home</a>   
+<a href="projectTest3(quotes).html">Quotes</a> 
+<div class="dropdown">
+    <button class="dropbtn">Stories
+     <i class="down"></i>
+    </button>
+    <div class="dropdown-content">
+        <h2>Company</h2>
+        <ol>
+            <li><a href="projectTestSuccess(musk).html">Elon Musk</a></li> 
+            <li><a href="projectTestSuccess(stevejobs).html">Steve Jobs</a></li> 
+        </ol>
+          <h2>Writing</h2>
+        <ol>
+        <li><a href="projectTestSuccess(JK).html">JK Rowling</a></li>
+        </ol>
+         <h2>BasketBall</h2>
+        <ol>
+            <li><a href="projectTestSuccess(jordan).html">Michael Jordan</a></li> 
+       
+        </ol>
+        
+          <h2>Football</h2>
+        <ol>
+            <li><a href="projectTestSuccess(Messi).html">Messi</a></li> 
+        </ol>
+    </div>
+    </div>
+    <a href="projectTestGetFeatured.html">Get Featured</a>
+    <a href="projectTestContact.html">About Us</a>
+    </div>
+    
+    
+    <div class="featured-box">
+      <div class="featured-title">
+        <h2>Tell your own Story</h2>
+        </div>
+        <div class="featured-form">
+        <form id="featured-form" method = "post" action="">
+            <input name="name" type="text" class="form-control" placeholder="Your Name" required autofocus>
+            <br>
+            <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+            <br>
+            <textarea name="message" class="form-control" placeholder="Write Your Own Story..." rows="9" required></textarea>
+            <br>
+            
+            <input type="submit" class="form-control submit" value="Get Featured">
+            
+            </form>
+        </div>
+    
+    </div>
+    
+    
+    
+    
+    </body>
+</html>

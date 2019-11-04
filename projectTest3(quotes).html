@@ -1,0 +1,252 @@
+<html>
+<head>
+<link rel="stylesheet" href="storyStyling.css">
+     <script src="scrollToTop.js"></script>
+    <link rel="icon" href="screenshots/icon.png">
+    <title>InspireMe: Quotes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: white;
+        }
+        .column {
+            margin-top: 25px;
+            float: left;
+            width: 33.3%;
+            height: 40%;
+            padding: 10px;
+          
+        }
+    
+         .myimg {
+             
+            border-radius: 20px;
+            transition: 0.5s;
+            cursor: pointer;
+             
+        }
+        
+        .myimg:hover {
+            opacity: 0.7;
+            
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+            height: 100%;    
+            left: 0;
+            top: 0;
+            overflow: auto;
+            padding-top: 50px;
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.9);
+            cursor: pointer;
+        }
+        
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 90%;
+            max-width: 800px;
+        
+        }
+        
+        #close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        
+        #close:hover,#close:focus {
+            color: gainsboro;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        h3 {
+            font-size: 30px;
+        }
+       
+        #img01 {
+          margin-top: 15px;
+           
+        }
+        
+        #myBtn {
+    display: none;
+    position: fixed;
+    border: none;
+    outline: none;
+    bottom: 20px;
+    right: 30px;
+    z-index: 1;
+   background-color: red;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#myBtn:hover {
+    background-color: grey;
+}
+        
+            
+      
+    </style>
+    
+    </head>
+<body>
+    
+   <div class="topnav">
+    <h1 class="blinking">InspireMe</h1>
+<a href="project.html" class="active">Home</a>   
+<a href="projectTest3(quotes).html">Quotes</a> 
+<div class="dropdown">
+    <button class="dropbtn">Stories
+     <i class="down"></i>
+    </button>
+    <div class="dropdown-content">
+        <h2>Company</h2>
+        <ol>
+            <li><a href="projectTestSuccess(musk).html">Elon Musk</a>  </li> 
+            <li><a href="projectTestSuccess(stevejobs).html">Steve Jobs</a></li> 
+        </ol>
+        <h2>Writing</h2>
+        <ol>
+        <li><a href="projectTestSuccess(JK).html">JK Rowling</a></li>
+        </ol>
+          <h2>BasketBall</h2>
+        <ol>
+            <li><a href="projectTestSuccess(jordan).html">Michael Jordan</a></li> 
+        </ol>
+          <h2>Football</h2>
+        <ol>
+            <li><a href="projectTestSuccess(Messi).html">Messi</a></li> 
+        </ol>
+    </div>
+    </div>
+     <a href="projectTestGetFeatured.html">Get Featured</a>
+    <a href="projectTestContact.html">About Us</a>
+    </div>
+    
+    
+    <button id="myBtn" onclick="topF()" title="go to top">Top</button>
+  
+    <div class = "row">
+    <div class = "column">
+       
+        <img class="myimg" src="screenshots/q6.jpg" alt = "pubg" style="width:100%;max-width: 100%;max-height:100%;">
+       
+         <div id="mymodal" class="modal">
+            <span id="close">&times;</span>
+        <img class="modal-content" id="img01">
+          
+        </div>
+        </div>
+         <div class = "column">   
+        <img class="myimg" src="screenshots/q1.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+        </div>
+      
+         <div class = "column">
+        <img class="myimg" src="screenshots/q2.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+    </div>
+    
+        
+        <div class = "column">
+        <img class="myimg" src="screenshots/q3.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+        </div>
+       
+         <div class = "column">
+        <img class="myimg" src="screenshots/q4.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;" >
+   </div>
+       
+         <div class = "column">
+        <img class="myimg" src="screenshots/q5.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;" >        
+        </div>
+        <div class = "column">
+        <img class = "myimg" src="screenshots/q6.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+        </div>
+         <div class = "column">
+        <img class = "myimg" src="screenshots/q7.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+        </div>
+         <div class = "column">
+        <img class = "myimg" src="screenshots/q8.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+        </div>
+         <div class = "column">
+        <img class = "myimg" src="screenshots/q9.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+        </div>
+         <div class = "column">
+        <img class = "myimg" src="screenshots/q10.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+        </div>
+         <div class = "column">
+        <img class = "myimg" src="screenshots/q11.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+        </div>
+         <div class = "column">
+        <img class = "myimg" src="screenshots/q12.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+        </div>
+         <div class = "column">
+        <img class = "myimg" src="screenshots/q13.png" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+        </div>
+         <div class = "column">
+        <img class = "myimg" src="screenshots/q16.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+        </div>
+        <div class = "column">
+        <img class = "myimg" src="screenshots/q15.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+        </div>
+        <div class = "column">
+        <img class = "myimg" src="screenshots/q14.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+        </div>
+        <div class = "column">
+        <img class = "myimg" src="screenshots/q17.jpg" alt = "pubg" style="width:100%;height:100%;max-height:100%;">
+        </div>
+        
+    </div>
+    
+    <script>
+        var i;
+        var img = document.getElementsByClassName('myimg');
+        var modal = document.getElementById('mymodal');
+        var modalImg = document.getElementById("img01");
+        
+        
+        for(i=0;i<img.length;i++)
+            {
+             img[i].onclick = function()
+             {
+   
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        
+        }
+            }
+             window.onclick = function(event){
+                 if (event.target == modal){
+                     modal.style.display = "none";
+                 }
+             }
+             
+             var span = document.getElementById("close");
+             
+             span.onclick = function()
+             {
+                 modal.style.display = "none";
+             }
+             
+    </script>
+    
+    
+    
+    </body>
+</html>
